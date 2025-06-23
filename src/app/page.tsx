@@ -1,94 +1,184 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <div className={styles.pageModern}>
+      {/* ヘッダー */}
+      <header className={styles.header}>
+        <div className={styles.headerInner}>
+          <div className={styles.logo}>株式会社大樹</div>
+          <nav className={styles.nav}>
+            <a href="#about">会社概要</a>
+            <a href="#services">サービス</a>
+            <a href="#flow">工事の流れ</a>
+            <a href="#contact">お問い合わせ</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* ヒーローセクション */}
+      <section className={styles.hero}>
+        <div className={styles.heroBg} />
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/32474709_m.jpg"
+          alt="住宅街の外観"
+          fill
+          style={{objectFit: 'cover', zIndex: 0, opacity: 0.8}}
           priority
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        <div className={styles.heroContent}>
+          <h1>株式会社大樹</h1>
+          <p>未来のための空間を創造します</p>
+          <a href="#contact" className={styles.ctaBtn}>お問い合わせ</a>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* 概要 */}
+      <section className={styles.section} id="about">
+        <h2>概要</h2>
+        <p className={styles.sectionLead}>
+          株式会社大樹は、住まいづくりのプロフェッショナルとして、
+          高品質な住宅建設、リフォーム、リノベーションを提供しています。
+        </p>
+        <div className={styles.statsRow}>
+          <div className={styles.statBox}><span>25+</span><br />施工年数</div>
+          <div className={styles.statBox}><span>500+</span><br />施工実績数</div>
+          <div className={styles.statBox}><span>98%</span><br />顧客満足度</div>
+        </div>
+      </section>
+
+      {/* サービス内容 */}
+      <section className={styles.section} id="services">
+        <h2>サービス内容</h2>
+        <div className={styles.servicesRow}>
+          <div className={styles.serviceCard}>
+            <div className={styles.serviceImg}>
+              <Image src="/service-new.jpg" alt="新築工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+            </div>
+            <h3>新築工事</h3>
+            <ul>
+              <li>戸建住宅・注文住宅</li>
+              <li>共同住宅・ビル</li>
+              <li>店舗・オフィス</li>
+            </ul>
+          </div>
+          <div className={styles.serviceCard}>
+            <div className={styles.serviceImg}>
+              <Image src="/service-interior.jpg" alt="内装工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+            </div>
+            <h3>内装工事</h3>
+            <ul>
+              <li>マンションリフォーム</li>
+              <li>バス/キッチン</li>
+              <li>バリアフリー</li>
+            </ul>
+          </div>
+          <div className={styles.serviceCard}>
+            <div className={styles.serviceImg}>
+              <Image src="/service-renovation.jpg" alt="リノベーション" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+            </div>
+            <h3>リノベーション</h3>
+            <ul>
+              <li>フルリノベーション</li>
+              <li>耐震補強</li>
+              <li>省エネ改修</li>
+            </ul>
+          </div>
+          <div className={styles.serviceCard}>
+            <div className={styles.serviceImg}>
+              <Image src="/service-repair.jpg" alt="修繕工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+            </div>
+            <h3>修繕工事</h3>
+            <ul>
+              <li>外壁・屋根</li>
+              <li>水回り</li>
+              <li>小規模修繕</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* 工事までの流れ */}
+      <section className={styles.sectionFlow} id="flow">
+        <h2>工事までの流れ</h2>
+        <p className={styles.sectionFlowLead}>
+          お問い合わせから施工完了まで、お客様に安心してご依頼いただけるよう丁寧にサポートいたします。
+        </p>
+        <div className={styles.flowGrid}>
+          <div className={styles.flowStep}>
+            <div className={styles.flowIcon}><span>1</span> <span role="img" aria-label="contact">💬</span></div>
+            <div className={styles.flowTitle}>お問い合わせ</div>
+            <div className={styles.flowDesc}>お電話またはウェブサイトからお気軽にご相談ください。ご要望をお聞かせください。</div>
+          </div>
+          <div className={styles.flowStep}>
+            <div className={styles.flowIcon}><span>2</span> <span role="img" aria-label="hearing">📋</span></div>
+            <div className={styles.flowTitle}>現地調査・ヒアリング</div>
+            <div className={styles.flowDesc}>お手様のご希望や現場の状況を詳しく確認します。具体的なご要望をお聞かせください。</div>
+          </div>
+          <div className={styles.flowStep}>
+            <div className={styles.flowIcon}><span>3</span> <span role="img" aria-label="plan">📝</span></div>
+            <div className={styles.flowTitle}>プラン・お見積り</div>
+            <div className={styles.flowDesc}>ご要望に沿ったプランと概算お見積りをご提案します。ご納得いただけるまでご調整いたします。</div>
+          </div>
+          <div className={styles.flowStep}>
+            <div className={styles.flowIcon}><span>4</span> <span role="img" aria-label="contract">📑</span></div>
+            <div className={styles.flowTitle}>ご契約</div>
+            <div className={styles.flowDesc}>プランとお見積りにご納得いただけましたら、正式にご契約となります。詳細な工程表もご提示します。</div>
+          </div>
+          <div className={styles.flowStep}>
+            <div className={styles.flowIcon}><span>5</span> <span role="img" aria-label="construction">🏠</span></div>
+            <div className={styles.flowTitle}>施工・監理</div>
+            <div className={styles.flowDesc}>経験豊富な職人による丁寧な施工を行います。定期的に進捗状況をご報告いたします。</div>
+          </div>
+          <div className={styles.flowStep}>
+            <div className={styles.flowIcon}><span>6</span> <span role="img" aria-label="handover">🔑</span></div>
+            <div className={styles.flowTitle}>完成・お引き渡し</div>
+            <div className={styles.flowDesc}>工事完了後、お客様立ち会いのもと検査を行い、問題なければお引き渡しをします。</div>
+          </div>
+        </div>
+      </section>
+
+      {/* お問い合わせ */}
+      <section className={styles.sectionContact} id="contact">
+        <h2>お問い合わせ</h2>
+        <div className={styles.contactRow}>
+          <form className={styles.contactForm}>
+            <input type="text" placeholder="お名前" required />
+            <input type="email" placeholder="メールアドレス" required />
+            <input type="tel" placeholder="電話番号" />
+            <textarea placeholder="お問い合わせ内容" required />
+            <button type="submit">送信</button>
+          </form>
+          <div className={styles.contactInfo}>
+            <div>📞 03-XXXX-XXXX</div>
+            <div>✉️ info@taiju-construction.co.jp</div>
+            <div>🏢 東京都〇〇区〇〇町X-X</div>
+            <div className={styles.mapEmbed}>
+              <span>地図（仮）</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* フッター */}
+      <footer className={styles.footerModern}>
+        <div>株式会社大樹</div>
+        <div className={styles.footerLinks}>
+          <a href="#">ホーム</a>
+          <a href="#about">会社概要</a>
+          <a href="#services">サービス</a>
+          <a href="#flow">工事の流れ</a>
+          <a href="#contact">お問い合わせ</a>
+        </div>
+        <div className={styles.footerContact}>
+          <div>〒XXX-XXXX 東京都〇〇区〇〇町X-X</div>
+          <div>03-XXXX-XXXX</div>
+          <div>info@taiju-construction.co.jp</div>
+        </div>
+        <div className={styles.copyright}>
+          © 2023 株式会社大樹 All Rights Reserved.
+        </div>
       </footer>
     </div>
   );
