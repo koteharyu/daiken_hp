@@ -60,46 +60,53 @@ export default function Home() {
         <div className={styles.servicesRow}>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/service-new.jpg" alt="新築工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/service-new.jpg" alt="屋根工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
             </div>
-            <h3>新築工事</h3>
+            <h3><span role="img" aria-label="checkbox">☑</span>屋根工事</h3>
             <ul>
-              <li>戸建住宅・注文住宅</li>
-              <li>共同住宅・ビル</li>
-              <li>店舗・オフィス</li>
+              <li>屋根葺き替え工事</li>
+              <li>屋根カバー工事</li>
+              <li>屋根葺き直し工事</li>
+              <li>屋根塗装工事</li>
+              <li>屋根板金工事</li>
             </ul>
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/service-interior.jpg" alt="内装工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/service-interior.jpg" alt="外壁工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
             </div>
-            <h3>内装工事</h3>
+            <h3><span role="img" aria-label="checkbox">☑</span>外壁工事</h3>
             <ul>
-              <li>マンションリフォーム</li>
-              <li>バス/キッチン</li>
-              <li>バリアフリー</li>
+              <li>サイディング壁</li>
+              <li>モルタル壁</li>
+              <li>タイル壁</li>
+              <li>金属サイディング</li>
             </ul>
+            <p style={{marginTop: '1em', fontSize: '0.95rem'}}>各種対応可能です！</p>
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/service-renovation.jpg" alt="リノベーション" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/service-renovation.jpg" alt="内装工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
             </div>
-            <h3>リノベーション</h3>
+            <h3><span role="img" aria-label="checkbox">☑</span>内装工事</h3>
             <ul>
               <li>フルリノベーション</li>
-              <li>耐震補強</li>
-              <li>省エネ改修</li>
+              <li>仕上げ工事<br /><span style={{fontSize: '0.9em'}}>(クロス、CF、フローリング等)</span></li>
+              <li>大工工事<br /><span style={{fontSize: '0.9em'}}>(建具等)</span></li>
+              <li>各設備工事<br /><span style={{fontSize: '0.9em'}}>(ユニットバス、キッチン、トイレ等)</span></li>
             </ul>
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/service-repair.jpg" alt="修繕工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/service-repair.jpg" alt="防水工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
             </div>
-            <h3>修繕工事</h3>
+            <h3><span role="img" aria-label="checkbox">☑</span>防水工事</h3>
             <ul>
-              <li>外壁・屋根</li>
-              <li>水回り</li>
-              <li>小規模修繕</li>
+              <li>FRP防水</li>
+              <li>シート防水</li>
+              <li>ウレタン防水</li>
+              <li>アスファルト防水</li>
+              <li>屋根防水</li>
             </ul>
           </div>
         </div>
