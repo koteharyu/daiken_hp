@@ -241,17 +241,17 @@ a.secondary {
 }
 .ctaBtn {
   display: inline-block;
-  background: #1e90ff;
+  background: #16a34a; /* Green color */
   color: #fff;
   font-weight: 600;
   padding: 0.8em 2.2em;
   border-radius: 999px;
   font-size: 1.1rem;
-  box-shadow: 0 2px 8px rgba(30,144,255,0.08);
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.15);
   transition: background 0.2s;
 }
 .ctaBtn:hover {
-  background: #2563eb;
+  background: #15803d; /* Darker green on hover */
 }
 
 .section {
@@ -475,10 +475,10 @@ a.secondary {
 }
 .contactForm input:focus,
 .contactForm textarea:focus {
-  border-color: #1e90ff;
+  border-color: #16a34a; /* Match button color */
 }
 .contactForm button {
-  background: #1e90ff;
+  background: #16a34a; /* Green color */
   color: #fff;
   font-weight: 600;
   border: none;
@@ -486,10 +486,15 @@ a.secondary {
   padding: 0.8em 0;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, opacity 0.2s;
 }
-.contactForm button:hover {
-  background: #2563eb;
+.contactForm button:hover:not(:disabled) {
+  background: #15803d; /* Darker green on hover */
+}
+.contactForm button:disabled {
+  background: #9ca3af;
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .contactDetails {
