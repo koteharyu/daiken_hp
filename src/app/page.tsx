@@ -47,11 +47,6 @@ export default function Home() {
           丁寧な施工を大切にし、信頼されるパートナーとして、<br />
           快適な暮らしをサポートします。
         </p>
-        <div className={styles.statsRow}>
-          <div className={styles.statBox}><span>25+</span><br />施工年数</div>
-          <div className={styles.statBox}><span>500+</span><br />施工実績数</div>
-          <div className={styles.statBox}><span>98%</span><br />顧客満足度</div>
-        </div>
       </section>
 
       {/* サービス内容 */}
