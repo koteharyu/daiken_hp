@@ -149,6 +149,11 @@ export default function Home() {
             <div className={styles.flowTitle}>完成・お引き渡し</div>
             <div className={styles.flowDesc}>工事完了後、お客様立ち会いのもと検査を行い、問題なければお引き渡しをします。</div>
           </div>
+          <div className={`${styles.flowStep} ${styles.flowStepFull}`}>
+            <div className={styles.flowIcon}><span>7</span> <span role="img" aria-label="inspection">🔍</span></div>
+            <div className={styles.flowTitle}>定期点検</div>
+            <div className={styles.flowDesc}>お引き渡し後、毎年年に一回施工箇所の点検へお伺いします。<br />その中で他に気になる点などございましたらお申し付けください</div>
+          </div>
         </div>
       </section>
 
