@@ -511,6 +511,16 @@ a.secondary {
   margin-bottom: 1.5em;
 }
 
+.contactInfo a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contactInfo a:hover {
+  color: #16a34a;
+}
+
 .mapEmbed {
   position: relative;
   width: 100%;
@@ -557,8 +567,21 @@ a.secondary {
   margin-bottom: 1.2em;
   color: #cbd5e1;
   font-size: 1rem;
+  line-height: 1.8;
 }
+
+.footerContact a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerContact a:hover {
+  color: #fff;
+}
+
 .copyright {
+  margin-top: 2rem;
   color: #64748b;
   font-size: 0.95rem;
   margin-top: 1.2em;
