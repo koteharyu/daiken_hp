@@ -149,7 +149,7 @@ export default function Home() {
             <div className={styles.contactInfo}>
               <div>📞 092-600-1194</div>
               <div>✉️ info@taiju-construction.co.jp</div>
-              <div>🏢 福岡県福岡市西区愛宕浜2-1-14 クレアコースト４番館 803</div>
+              <div>🏢 〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
             </div>
             <div className={styles.mapEmbed}>
               <iframe
@@ -177,8 +177,8 @@ export default function Home() {
           <a href="#contact">お問い合わせ</a>
         </div>
         <div className={styles.footerContact}>
-          <div>〒819-0013 福岡県福岡市西区愛宕浜2-1-14 クレアコースト４番館 803</div>
-          <div>092-600-1194</div>
+          <div>〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
+          <div>092 600 1194</div>
           <div>info@taiju-construction.co.jp</div>
         </div>
         <div className={styles.copyright}>
