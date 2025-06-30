@@ -165,15 +165,15 @@ export default function Home() {
           <div className={styles.contactDetails}>
             <div className={styles.contactInfo}>
               <div><a href="tel:0926001194">📞 092-600-1194</a></div>
-              <div><a href="mailto:info@daikensetsu111.com">✉️ info@daikensetsu111.com</a></div>
-              <div>🏢 〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
+              <div><a href="mailto:info@taiju-construction.co.jp">✉️ info@taiju-construction.co.jp</a></div>
+              <div>🏢 〒818-0068 福岡県筑紫野市石崎３丁目３３番地6</div>
             </div>
             <div className={styles.mapEmbed}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4535501802948!2d130.33485437614524!3d33.59353467333314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419310785c6c1f%3A0x6f8e026d2a787f5!2z44CSODE5LTAwMTMg56aP5bKh55yM56aP5bKh5biC6KW_5Yy65oSb5a6V5rWc77yS5LiB55uu77yR4oiS77yR77yUIOODnuODquODiuOCv-OCpuODs-OCr-ODrOOCouOCs-ODvOOCueODiO-8lOeVqumkqCA0LDgwMw!5e0!3m2!1sja!2sjp!4v1751264089444!5m2!1sja!2sjp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.3659147225458!2d130.53103237614167!3d33.49185577337307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419be099b84cf7%3A0x1c8f760f5457a5bd!2z44CSODE4LTAwNjgg56aP5bKh55yM562R57Sr6YeO5biC55-z5bSO77yT5LiB55uu77yT77yT4oiS77yW!5e0!3m2!1sja!2sjp!4v1751274066209!5m2!1sja!2sjp"
                 width="600"
                 height="450"
-                style={{ border: 0 }}
+                style={{ border:0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade">
