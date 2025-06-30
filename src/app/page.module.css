@@ -160,9 +160,26 @@ a.secondary {
     justify-content: center;
   }
 
+  .section, .sectionFlow, .sectionContact {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
   .aboutGrid {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.2rem;
+  }
+
+  .aboutImage img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .headerInner {
@@ -780,5 +797,12 @@ a.secondary {
   }
   .nav a:last-child {
     border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageModern {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
