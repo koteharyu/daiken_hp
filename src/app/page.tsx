@@ -66,6 +66,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 代表挨拶 */}
+      <section className={styles.section} id="greeting">
+        <h2>代表挨拶</h2>
+        <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', fontSize: '1.08rem', color: '#475569', lineHeight: 2 }}>
+          <p>株式会社大建設のホームページをご覧いただき、誠にありがとうございます。</p>
+          <p>​当社は福岡県を拠点に、地域の皆様の住まいに関するお悩みやご希望に、真摯に向き合ってまいりました。</p>
+          <p>リフォームとは、ただ古くなった部分を直すだけでなく、</p>
+          <p>お客様の暮らしをより快適に、より豊かに変えていく</p>
+          <p>大切な仕事だと考えています。</p>
+          <br />
+          <p>小さな修理から大規模な改装まで、一つひとつのご依頼に対し、丁寧な対応と確かな施工をお約束致します。また、お打ち合わせからアフターフォローまで、安心して任せて頂ける会社でありたいと日々努力しております。</p>
+          <br />
+          <p>これからも「誠実な仕事で生まれ育った街、福岡に貢献する」という信念を胸に、お客様との信頼関係を大切にしながら、</p>
+          <p>一つでも多くの笑顔をつくれるよう努めてまいります。</p>
+          <br />
+          <p style={{ textAlign: 'right', marginTop: '2.5em', fontWeight: 'bold' }}>​代表取締役　　上田大樹</p>
+        </div>
+      </section>
+
       {/* サービス内容 */}
       <section className={styles.section} id="services">
         <h2>サービス内容</h2>
