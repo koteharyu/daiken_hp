@@ -159,6 +159,11 @@ a.secondary {
     align-items: center;
     justify-content: center;
   }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -277,7 +282,22 @@ a.secondary {
   color: #475569;
   margin-bottom: 2.2rem;
   text-align: center;
+  line-height: 1.8; /* 行間を追加 */
 }
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 3.5rem;
+  margin-top: 3rem;
+}
+.aboutImage {
+  text-align: center;
+}
+.aboutText {
+  font-size: 1.05rem;
+}
+
 .statsRow {
   display: flex;
   justify-content: center;
@@ -624,6 +644,11 @@ a.secondary {
     padding: 18px 0 8px 0;
     margin-top: 24px;
     border-radius: 12px 12px 0 0;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 

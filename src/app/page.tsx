@@ -37,16 +37,33 @@ export default function Home() {
 
       {/* 概要 */}
       <section className={styles.section} id="about">
-        <h2>概要</h2>
-        <p className={styles.sectionLead}>
-          株式会社大建設（ダイケンセツ）<br />
+        <h2>会社概要</h2>
+        <div className={styles.aboutGrid}>
+          <div className={styles.aboutImage}>
+            <Image
+              src="/hero-modern-house2.jpg"
+              alt="モダンな住宅のキッチン"
+              width={450}
+              height={300}
+              style={{
+                borderRadius: '12px',
+                objectFit: 'cover',
+                boxShadow: '0 4px 25px rgba(0,0,0,0.07)',
+              }}
+            />
+          </div>
+          <div className={styles.aboutText}>
+            <p className={styles.sectionLead} style={{ textAlign: 'left', marginBottom: 0 }}>
+            株式会社大建設（ダイケンセツ）<br />
           <strong>【未来に繋ぐ、確かな住まいづくり】</strong><br />
           株式会社大建設は、地域に根付いたリフォーム専門会社として<br />
           屋根・外壁・内装・水回りを中心に住まいのあらゆるお悩みに対応しています。<br />
           お客様一人ひとりのライフスタイルに合わせた、最適なご提案と<br />
           丁寧な施工を大切にし、信頼されるパートナーとして、<br />
           快適な暮らしをサポートします。
-        </p>
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* サービス内容 */}
