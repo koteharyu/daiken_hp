@@ -183,7 +183,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* フッター */}
+      {/* フッター! */}
       <footer className={styles.footerModern}>
         <div>株式会社大建設</div>
         <div className={styles.footerLinks}>
