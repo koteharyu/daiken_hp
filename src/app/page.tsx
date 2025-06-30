@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Image from "next/image";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       {/* ヘッダー */}
       <header className={styles.header}>
         <div className={styles.headerInner}>
-          <div className={styles.logo}>株式会社大樹</div>
+          <div className={styles.logo}>株式会社大建設</div>
           <nav className={styles.nav}>
             <a href="#about">会社概要</a>
             <a href="#services">サービス</a>
@@ -28,7 +29,7 @@ export default function Home() {
           priority
         />
         <div className={styles.heroContent}>
-          <h1>株式会社大樹</h1>
+          <h1>株式会社大建設</h1>
           <p>未来のための空間を創造します</p>
           <a href="#contact" className={styles.ctaBtn}>お問い合わせ</a>
         </div>
@@ -38,7 +39,7 @@ export default function Home() {
       <section className={styles.section} id="about">
         <h2>概要</h2>
         <p className={styles.sectionLead}>
-          株式会社大樹は、住まいづくりのプロフェッショナルとして、
+          株式会社大建設は、住まいづくりのプロフェッショナルとして、
           高品質な住宅建設、リフォーム、リノベーションを提供しています。
         </p>
         <div className={styles.statsRow}>
@@ -143,19 +144,23 @@ export default function Home() {
       <section className={styles.sectionContact} id="contact">
         <h2>お問い合わせ</h2>
         <div className={styles.contactRow}>
-          <form className={styles.contactForm}>
-            <input type="text" placeholder="お名前" required />
-            <input type="email" placeholder="メールアドレス" required />
-            <input type="tel" placeholder="電話番号" />
-            <textarea placeholder="お問い合わせ内容" required />
-            <button type="submit">送信</button>
-          </form>
-          <div className={styles.contactInfo}>
-            <div>📞 03-XXXX-XXXX</div>
-            <div>✉️ info@taiju-construction.co.jp</div>
-            <div>🏢 東京都〇〇区〇〇町X-X</div>
+          <ContactForm />
+          <div className={styles.contactDetails}>
+            <div className={styles.contactInfo}>
+              <div>📞 070-1180-0336</div>
+              <div>✉️ info@taiju-construction.co.jp</div>
+              <div>🏢 福岡県福岡市西区愛宕浜2-1-14 クレアコースト４番館 803</div>
+            </div>
             <div className={styles.mapEmbed}>
-              <span>地図（仮）</span>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4535501802948!2d130.33485437614524!3d33.59353467333314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419310785c6c1f%3A0x6f8e026d2a787f5!2z44CSODE5LTAwMTMg56aP5bKh55yM56aP5bKh5biC6KW_5Yy65oSb5a6V5rWc77yS5LiB55uu77yR4oiS77yR77yUIOODnuODquODiuOCv-OCpuODs-OCr-ODrOOCouOCs-ODvOOCueODiO-8lOeVqumkqCA0LDgwMw!5e0!3m2!1sja!2sjp!4v1751264089444!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
             </div>
           </div>
         </div>
@@ -163,7 +168,7 @@ export default function Home() {
 
       {/* フッター */}
       <footer className={styles.footerModern}>
-        <div>株式会社大樹</div>
+        <div>株式会社大建設</div>
         <div className={styles.footerLinks}>
           <a href="#">ホーム</a>
           <a href="#about">会社概要</a>
@@ -172,12 +177,12 @@ export default function Home() {
           <a href="#contact">お問い合わせ</a>
         </div>
         <div className={styles.footerContact}>
-          <div>〒XXX-XXXX 東京都〇〇区〇〇町X-X</div>
-          <div>03-XXXX-XXXX</div>
+          <div>〒819-0013 福岡県福岡市西区愛宕浜2-1-14 クレアコースト４番館 803</div>
+          <div>070-1180-0336</div>
           <div>info@taiju-construction.co.jp</div>
         </div>
         <div className={styles.copyright}>
-          © 2023 株式会社大樹 All Rights Reserved.
+          © 2023 株式会社大建設 All Rights Reserved.
         </div>
       </footer>
     </div>
