@@ -6,17 +6,6 @@ export default function Home() {
   return (
     <div className={styles.pageModern}>
       {/* ヘッダー */}
-      <header className={styles.header}>
-        <div className={styles.headerInner}>
-          <div className={styles.logo}>株式会社大建設</div>
-          <nav className={styles.nav}>
-            <a href="#about">会社概要</a>
-            <a href="#services">サービス</a>
-            <a href="#flow">工事の流れ</a>
-            <a href="#contact">お問い合わせ</a>
-          </nav>
-        </div>
-      </header>
 
       {/* ヒーローセクション */}
       <section className={styles.hero}>

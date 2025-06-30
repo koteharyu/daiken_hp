@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+'use client';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { useState } from 'react';
+import styles from "./page.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,22 +14,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "株式会社大建設",
-  description: "株式会社大建設の公式ウェブサイト。高品質な住宅建設、リフォーム、リノベーションを提供します。",
-  icons: {
-    icon: "/favicon.jpg",
-  },
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <html lang="ja">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <header className={styles.header}>
+          <div className={styles.headerInner}>
+            <div className={styles.logo}>株式会社大建設</div>
+            <nav className={styles.nav} style={{ display: menuOpen ? 'block' : undefined }}>
+              <a href="#about">会社概要</a>
+              <a href="#services">サービス</a>
+              <a href="#flow">工事の流れ</a>
+              <a href="#contact">お問い合わせ</a>
+            </nav>
+            <button
+              className={styles.hamburger}
+              aria-label="メニューを開く"
+              onClick={() => setMenuOpen((v) => !v)}
+            >
+              <span className={styles.hamburgerBar}></span>
+              <span className={styles.hamburgerBar}></span>
+              <span className={styles.hamburgerBar}></span>
+            </button>
+          </div>
+        </header>
         {children}
       </body>
     </html>
