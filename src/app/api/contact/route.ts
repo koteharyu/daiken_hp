@@ -95,7 +95,7 @@ export async function POST(request: NextRequest) {
           <strong>株式会社大建設</strong><br>
           〒818-0068 福岡県筑紫野市石崎3丁目33番地6<br>
           TEL: 092-600-1194<br>
-          Email: info@taiju-construction.co.jp
+          Email: info@daikensetsu111.com
         </p>
 
         <p style="color: #999; font-size: 12px;">
