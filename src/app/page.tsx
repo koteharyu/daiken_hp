@@ -147,7 +147,7 @@ export default function Home() {
           <ContactForm />
           <div className={styles.contactDetails}>
             <div className={styles.contactInfo}>
-              <div>📞 070-1180-0336</div>
+              <div>📞 092-600-1194</div>
               <div>✉️ info@taiju-construction.co.jp</div>
               <div>🏢 福岡県福岡市西区愛宕浜2-1-14 クレアコースト４番館 803</div>
             </div>
@@ -178,7 +178,7 @@ export default function Home() {
         </div>
         <div className={styles.footerContact}>
           <div>〒819-0013 福岡県福岡市西区愛宕浜2-1-14 クレアコースト４番館 803</div>
-          <div>070-1180-0336</div>
+          <div>092-600-1194</div>
           <div>info@taiju-construction.co.jp</div>
         </div>
         <div className={styles.copyright}>
