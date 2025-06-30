@@ -47,7 +47,7 @@ export default function Home() {
           <strong>【未来に繋ぐ、確かな住まいづくり】</strong><br />
           株式会社大建設は、地域に根付いたリフォーム専門会社として<br />
           屋根・外壁・内装・水回りを中心に住まいのあらゆるお悩みに対応しています。<br />
-          お客様一人ひとりのライフスタイルに合わせた、最適なご提案と<br />
+          お客様一人ひとつのライフスタイルに合わせた、最適なご提案と<br />
           丁寧な施工を大切にし、信頼されるパートナーとして、<br />
           快適な暮らしをサポートします。
             </p>
@@ -56,7 +56,7 @@ export default function Home() {
       </section>
 
       {/* 代表挨拶 */}
-      <section className={styles.section} id="greeting">
+      <section className={`${styles.section} ${styles.greetingSection}`} id="greeting">
         <h2>代表挨拶</h2>
         <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', fontSize: '1.08rem', color: '#475569', lineHeight: 2 }}>
           <p>株式会社大建設のホームページをご覧いただき、誠にありがとうございます。</p>
