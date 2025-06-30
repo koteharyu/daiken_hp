@@ -39,8 +39,13 @@ export default function Home() {
       <section className={styles.section} id="about">
         <h2>概要</h2>
         <p className={styles.sectionLead}>
-          株式会社大建設は、住まいづくりのプロフェッショナルとして、
-          高品質な住宅建設、リフォーム、リノベーションを提供しています。
+          株式会社大建設（ダイケンセツ）<br />
+          <strong>【未来に繋ぐ、確かな住まいづくり】</strong><br />
+          株式会社大建設は、地域に根付いたリフォーム専門会社として<br />
+          屋根・外壁・内装・水回りを中心に住まいのあらゆるお悩みに対応しています。<br />
+          お客様一人ひとりのライフスタイルに合わせた、最適なご提案と<br />
+          丁寧な施工を大切にし、信頼されるパートナーとして、<br />
+          快適な暮らしをサポートします。
         </p>
         <div className={styles.statsRow}>
           <div className={styles.statBox}><span>25+</span><br />施工年数</div>
