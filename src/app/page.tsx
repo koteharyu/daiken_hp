@@ -80,7 +80,7 @@ export default function Home() {
         <div className={styles.servicesRow}>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/roof.jpg" alt="屋根工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/roof.jpg" alt="屋根工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} priority />
             </div>
             <h3><span role="img" aria-label="checkbox">☑</span>屋根工事</h3>
             <ul>
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/interior.jpg" alt="内装工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/interior.jpg" alt="内装工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} priority />
             </div>
             <h3><span role="img" aria-label="checkbox">☑</span>内装工事</h3>
             <ul>
