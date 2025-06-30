@@ -41,8 +41,8 @@ export default function Home() {
         <div className={styles.aboutGrid}>
           <div className={styles.aboutImage}>
             <Image
-              src="/hero-modern-house2.jpg"
-              alt="モダンな住宅のキッチン"
+              src="/company-overview.png"
+              alt="会社概要のイメージ"
               width={450}
               height={300}
               style={{
@@ -53,7 +53,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.aboutText}>
-            <p className={styles.sectionLead} style={{ textAlign: 'left', marginBottom: 0 }}>
+            <p className={styles.sectionLead} style={{ textAlign: 'center', marginBottom: 0 }}>
             株式会社大建設（ダイケンセツ）<br />
           <strong>【未来に繋ぐ、確かな住まいづくり】</strong><br />
           株式会社大建設は、地域に根付いたリフォーム専門会社として<br />
