@@ -199,7 +199,7 @@ export default function Home() {
           <div>info@daikensetsu111.com</div>
         </div>
         <div className={styles.copyright}>
-          © 2023 株式会社大建設 All Rights Reserved.
+          © 2025 株式会社大建設 All Rights Reserved.
         </div>
       </footer>
     </div>
