@@ -165,7 +165,7 @@ export default function Home() {
           <div className={styles.contactDetails}>
             <div className={styles.contactInfo}>
               <div><a href="tel:0926001194">📞 092-600-1194</a></div>
-              <div>✉️ info@daikensetsu111.com</div>
+              <div><a href="mailto:info@daikensetsu111.com">✉️ info@daikensetsu111.com</a></div>
               <div>🏢 〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
             </div>
             <div className={styles.mapEmbed}>
@@ -196,7 +196,7 @@ export default function Home() {
         <div className={styles.footerContact}>
           <div>〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
           <div><a href="tel:0926001194">092-600-1194</a></div>
-          <div>info@taiju-construction.co.jp</div>
+          <div><a href="mailto:info@daikensetsu111.com">info@daikensetsu111.com</a></div>
         </div>
         <div className={styles.copyright}>
           © 2025 株式会社大建設 All Rights Reserved.
