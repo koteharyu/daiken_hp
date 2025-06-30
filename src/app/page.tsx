@@ -60,7 +60,7 @@ export default function Home() {
         <div className={styles.servicesRow}>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/service-new.jpg" alt="屋根工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/roof.jpg" alt="屋根工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
             </div>
             <h3><span role="img" aria-label="checkbox">☑</span>屋根工事</h3>
             <ul>
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/service-interior.jpg" alt="外壁工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/exterior.jpg" alt="外壁工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
             </div>
             <h3><span role="img" aria-label="checkbox">☑</span>外壁工事</h3>
             <ul>
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/service-renovation.jpg" alt="内装工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/interior.jpg" alt="内装工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
             </div>
             <h3><span role="img" aria-label="checkbox">☑</span>内装工事</h3>
             <ul>
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
           <div className={styles.serviceCard}>
             <div className={styles.serviceImg}>
-              <Image src="/service-repair.jpg" alt="防水工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
+              <Image src="/waterproof.jpg" alt="防水工事" width={220} height={140} style={{borderRadius: '10px', objectFit: 'cover'}} />
             </div>
             <h3><span role="img" aria-label="checkbox">☑</span>防水工事</h3>
             <ul>
