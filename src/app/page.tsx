@@ -198,7 +198,7 @@ export default function Home() {
             <div className={styles.companyContent}>〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
           </div>
           <div className={styles.companyRow}>
-            <div className={styles.companyLabel}>資本金</div>
+            <div className={styles.companyLabel}>資本準備金</div>
             <div className={styles.companyContent}>10,000,000円</div>
           </div>
           <div className={styles.companyRow}>
