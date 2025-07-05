@@ -269,7 +269,7 @@ a.secondary {
   transition: color 0.2s;
 }
 .nav a:hover {
-  color: #1e90ff;
+  color: #E68A00;
 }
 
 .hero {
@@ -310,17 +310,17 @@ a.secondary {
 }
 .ctaBtn {
   display: inline-block;
-  background: #16a34a; /* Green color */
+  background: #E68A00; /* Orange color */
   color: #fff;
   font-weight: 600;
   padding: 0.8em 2.2em;
   border-radius: 999px;
   font-size: 1.1rem;
-  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.15);
+  box-shadow: 0 2px 8px rgba(230, 138, 0, 0.15);
   transition: background 0.2s;
 }
 .ctaBtn:hover {
-  background: #15803d; /* Darker green on hover */
+  background: #CC7A00; /* Darker orange on hover */
 }
 
 .section {
@@ -380,7 +380,7 @@ a.secondary {
 .statBox span {
   font-size: 2.1rem;
   font-weight: bold;
-  color: #1e90ff;
+  color: #E68A00;
 }
 
 .servicesRow {
@@ -393,7 +393,7 @@ a.secondary {
 .serviceCard {
   background: #f8fafc;
   border-radius: 16px;
-  box-shadow: 0 1px 8px rgba(30,144,255,0.06);
+  box-shadow: 0 1px 8px rgba(230,138,0,0.06);
   padding: 2.2em 1.5em 1.5em 1.5em;
   min-width: 220px;
   max-width: 260px;
@@ -403,7 +403,7 @@ a.secondary {
 }
 .serviceCard:hover {
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 4px 16px rgba(30,144,255,0.13);
+  box-shadow: 0 4px 16px rgba(230,138,0,0.13);
 }
 .serviceImg {
   font-size: 2.5rem;
@@ -476,7 +476,7 @@ a.secondary {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #16a085;
+  background: #E68A00;
   color: #fff;
   border-radius: 50%;
   width: 56px;
@@ -484,7 +484,7 @@ a.secondary {
   font-size: 2rem;
   margin-bottom: 0.7em;
   position: relative;
-  box-shadow: 0 2px 8px rgba(22,160,133,0.08);
+  box-shadow: 0 2px 8px rgba(230,138,0,0.08);
   gap: 0.2em;
 }
 .flowIcon span:first-child {
@@ -492,7 +492,7 @@ a.secondary {
   top: -12px;
   left: -12px;
   background: #fff;
-  color: #16a085;
+  color: #E68A00;
   border-radius: 50%;
   width: 28px;
   height: 28px;
@@ -560,10 +560,10 @@ a.secondary {
 }
 .contactForm input:focus,
 .contactForm textarea:focus {
-  border-color: #16a34a; /* Match button color */
+  border-color: #E68A00; /* Match button color */
 }
 .contactForm button {
-  background: #16a34a; /* Green color */
+  background: #E68A00; /* Orange color */
   color: #fff;
   font-weight: 600;
   border: none;
@@ -574,7 +574,7 @@ a.secondary {
   transition: background 0.2s, opacity 0.2s;
 }
 .contactForm button:hover:not(:disabled) {
-  background: #15803d; /* Darker green on hover */
+  background: #CC7A00; /* Darker orange on hover */
 }
 .contactForm button:disabled {
   background: #9ca3af;
@@ -603,7 +603,7 @@ a.secondary {
 }
 
 .contactInfo a:hover {
-  color: #16a34a;
+  color: #E68A00;
 }
 
 .mapEmbed {
@@ -646,7 +646,7 @@ a.secondary {
   transition: color 0.2s;
 }
 .footerLinks a:hover {
-  color: #60a5fa;
+  color: #E68A00;
 }
 .footerContact {
   margin-bottom: 1.2em;
@@ -878,9 +878,9 @@ a.secondary {
 .companyLabel {
   flex: 0 0 150px;
   padding: 16px 20px;
-  background: #e6f7f5;
+  background: #FFF4E6;
   font-weight: 600;
-  color: #047857;
+  color: #B36200;
   border-right: 1px solid #e5e7eb;
 }
 
