@@ -152,6 +152,7 @@ export default function Home() {
         <h2>会社概要</h2>
         <div className={styles.aboutContent}>
           <h4>株式会社大建設（ダイケンセツ）</h4>
+          <br />
           <p className={styles.aboutTagline}>【未来に繋ぐ、確かな住まいづくり】</p>
           <p className={styles.aboutDescription}>
             株式会社大建設は、地域に根付いたリフォーム専門会社として<br />
