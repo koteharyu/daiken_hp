@@ -929,8 +929,12 @@ a.secondary {
 .aboutTagline {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #E68A00;
+  color: #333;
+  background: linear-gradient(104deg, rgba(255, 193, 7, 0.3) 0.9%, rgba(255, 193, 7, 0.7) 2.4%, rgba(255, 193, 7, 0.5) 5.8%, rgba(255, 193, 7, 0.6) 93%, rgba(255, 193, 7, 0.8) 96%, transparent 98%), linear-gradient(183deg, rgba(255, 193, 7, 0) 0%, rgba(255, 193, 7, 0.4) 7.9%, rgba(255, 193, 7, 0) 15%);
   margin-bottom: 1.5rem;
+  display: inline;
+  padding: 2px 4px;
+  position: relative;
 }
 
 .aboutDescription {
@@ -947,6 +951,7 @@ a.secondary {
   
   .aboutTagline {
     font-size: 1.2rem;
+    padding: 2px 4px;
   }
   
   .aboutDescription {
