@@ -259,7 +259,7 @@ a.secondary {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.1em;
-  color: #F7D57F !important;
+  color: #D4AF37 !important;
   text-shadow: 0 1px 4px rgba(255,255,255,0.7), 0 1px 8px rgba(0,0,0,0.08);
 }
 .nav a {
@@ -842,7 +842,7 @@ a.secondary {
 }
 
 .greetingSection {
-  background: #f1f5f9;
+  background: #fff;
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(255, 183, 77, 0.08);
   padding: 48px 20px 36px 20px;
