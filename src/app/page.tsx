@@ -177,30 +177,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Company */}
+      <section className={styles.section} id="company">
+        <h2>Company</h2>
+        <div className={styles.companyTable}>
+          <div className={styles.companyRow}>
+            <div className={styles.companyLabel}>会社名</div>
+            <div className={styles.companyContent}>株式会社大建設</div>
+          </div>
+          <div className={styles.companyRow}>
+            <div className={styles.companyLabel}>設立</div>
+            <div className={styles.companyContent}>2025年6月</div>
+          </div>
+          <div className={styles.companyRow}>
+            <div className={styles.companyLabel}>代表取締役</div>
+            <div className={styles.companyContent}>上田大樹</div>
+          </div>
+          <div className={styles.companyRow}>
+            <div className={styles.companyLabel}>住所</div>
+            <div className={styles.companyContent}>〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
+          </div>
+          <div className={styles.companyRow}>
+            <div className={styles.companyLabel}>資本金</div>
+            <div className={styles.companyContent}>10,000,000円</div>
+          </div>
+          <div className={styles.companyRow}>
+            <div className={styles.companyLabel}>事業内容</div>
+            <div className={styles.companyContent}>
+              ・屋根/外壁工事<br />
+              ・塗装/防水工事<br />
+              ・内装/設備工事
+            </div>
+          </div>
+          <div className={styles.companyRow}>
+            <div className={styles.companyLabel}>取引銀行</div>
+            <div className={styles.companyContent}>PayPay銀行</div>
+          </div>
+        </div>
+      </section>
+
       {/* お問い合わせ */}
       <section className={styles.sectionContact} id="contact">
         <h2>お問い合わせ</h2>
-        <div className={styles.contactRow}>
-          <ContactForm />
-          <div className={styles.contactDetails}>
-            <div className={styles.contactInfo}>
-              <div><a href="tel:0926001194">📞 092-600-1194</a></div>
-              <div><a href="mailto:info@daikensetsu111.com">✉️ info@daikensetsu111.com</a></div>
-              <div>🏢 〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
-            </div>
-            <div className={styles.mapEmbed}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.3659147225458!2d130.53103237614167!3d33.49185577337307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419be099b84cf7%3A0x1c8f760f5457a5bd!2z44CSODE4LTAwNjgg56aP5bKh55yM562R57Sr6YeO5biC55-z5bSO77yT5LiB55uu77yT77yT4oiS77yW!5e0!3m2!1sja!2sjp!4v1751274066209!5m2!1sja!2sjp"
-                width="600"
-                height="450"
-                style={{ border:0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </div>
-        </div>
+        <ContactForm />
       </section>
 
       {/* フッター! */}
@@ -211,6 +230,8 @@ export default function Home() {
           <a href="#about">会社概要</a>
           <a href="#services">サービス</a>
           <a href="#flow">工事の流れ</a>
+          <a href="#greeting">代表挨拶</a>
+          <a href="#company">Company</a>
           <a href="#contact">お問い合わせ</a>
         </div>
         <div className={styles.footerContact}>
