@@ -259,7 +259,7 @@ a.secondary {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.1em;
-  color: #000 !important;
+  color: #F7D57F !important;
   text-shadow: 0 1px 4px rgba(255,255,255,0.7), 0 1px 8px rgba(0,0,0,0.08);
 }
 .nav a {
