@@ -32,7 +32,6 @@ export default function RootLayout({
               <a href="#services">サービス</a>
               <a href="#flow">工事の流れ</a>
               <a href="#greeting">代表挨拶</a>
-              <a href="#company">Company</a>
               <a href="#contact">お問い合わせ</a>
             </nav>
             <button

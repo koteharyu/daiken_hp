@@ -24,36 +24,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 概要 */}
-      <section className={styles.section} id="about">
-        <h2>会社概要</h2>
-        <div className={styles.aboutGrid}>
-          <div className={styles.aboutImage}>
-            <Image
-              src="/company-overview.png"
-              alt="会社概要のイメージ"
-              width={450}
-              height={300}
-              style={{
-                borderRadius: '12px',
-                objectFit: 'cover',
-                boxShadow: '0 4px 25px rgba(0,0,0,0.07)',
-              }}
-            />
-          </div>
-          <div className={styles.aboutText}>
-            <p className={styles.sectionLead} style={{ textAlign: 'center', marginBottom: 0 }}>
-            株式会社大建設（ダイケンセツ）<br />
-          <strong>【未来に繋ぐ、確かな住まいづくり】</strong><br />
-          株式会社大建設は、地域に根付いたリフォーム専門会社として<br />
-          屋根・外壁・内装・水回りを中心に住まいのあらゆるお悩みに対応しています。<br />
-          お客様一人ひとつのライフスタイルに合わせた、最適なご提案と<br />
-          丁寧な施工を大切にし、信頼されるパートナーとして、<br />
-          快適な暮らしをサポートします。
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* サービス内容 */}
       <section className={styles.section} id="services">
@@ -177,10 +147,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Company */}
-      <section className={styles.section} id="company">
-        <h2>Company</h2>
-        <div className={styles.companyTable}>
+      {/* 会社概要 */}
+      <section className={styles.section} id="about">
+        <h2>会社概要</h2>
+        <div className={styles.aboutContent}>
+          <h4>株式会社大建設（ダイケンセツ）</h4>
+          <p className={styles.aboutTagline}>【未来に繋ぐ、確かな住まいづくり】</p>
+          <p className={styles.aboutDescription}>
+            株式会社大建設は、地域に根付いたリフォーム専門会社として<br />
+            屋根・外壁・内装・水回りを中心に住まいのあらゆるお悩みに対応しています。<br />
+            お客様一人ひとつのライフスタイルに合わせた、最適なご提案と<br />
+            丁寧な施工を大切にし、信頼されるパートナーとして、<br />
+            快適な暮らしをサポートします。
+          </p>
+        </div>
+
+        {/* 会社情報テーブル */}
+        <div className={styles.companyTable} style={{ marginTop: '3rem' }}>
           <div className={styles.companyRow}>
             <div className={styles.companyLabel}>会社名</div>
             <div className={styles.companyContent}>株式会社大建設</div>
@@ -231,7 +214,6 @@ export default function Home() {
           <a href="#services">サービス</a>
           <a href="#flow">工事の流れ</a>
           <a href="#greeting">代表挨拶</a>
-          <a href="#company">Company</a>
           <a href="#contact">お問い合わせ</a>
         </div>
         <div className={styles.footerContact}>
