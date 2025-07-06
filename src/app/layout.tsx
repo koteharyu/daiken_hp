@@ -26,7 +26,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
         <title>株式会社大建設</title>
-        <meta name="description" content="福岡県筑紫野市の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。" />
+        <meta name="description" content="福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header className={styles.header}>

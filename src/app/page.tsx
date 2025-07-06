@@ -179,7 +179,7 @@ export default function Home() {
           </div>
           <div className={styles.companyRow}>
             <div className={styles.companyLabel}>住所</div>
-            <div className={styles.companyContent}>〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
+            <div className={styles.companyContent}>福岡県福岡市西区愛宕浜2-1-14-803</div>
           </div>
           <div className={styles.companyRow}>
             <div className={styles.companyLabel}>資本準備金</div>
@@ -218,8 +218,8 @@ export default function Home() {
           <a href="#contact">お問い合わせ</a>
         </div>
         <div className={styles.footerContact}>
-          <div>〒818-0068 福岡県筑紫野市石崎3丁目33番地6</div>
-          <div><a href="tel:0926001194">092-600-1194</a></div>
+          <div>福岡県福岡市西区愛宕浜2-1-14-803</div>
+          <div><a href="tel:07011800336">070-1180-0336</a></div>
           <div><a href="mailto:info@daikensetsu111.com">info@daikensetsu111.com</a></div>
         </div>
         <div className={styles.copyright}>
