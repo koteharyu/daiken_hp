@@ -28,8 +28,8 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
         <title>株式会社大建設 | 福岡市西区のリフォーム専門会社 - 屋根・外壁・内装・防水工事</title>
-        <meta name="description" content="福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。地域密着で丁寧な施工をお約束。無料見積もり実施中。" />
-        <meta name="keywords" content="リフォーム,屋根工事,外壁工事,内装工事,防水工事,福岡市西区,福岡県,大建設,塗装工事,設備工事" />
+        <meta name="description" content="福岡県福岡市西区の株式会社大建設（だいけんせつ）。屋根・外壁・内装・防水工事のリフォーム専門会社です。地域密着で丁寧な施工をお約束。無料見積もり実施中。" />
+        <meta name="keywords" content="リフォーム,屋根工事,外壁工事,内装工事,防水工事,福岡市西区,福岡県,大建設,だいけんせつ,ダイケンセツ,塗装工事,設備工事" />
         <meta name="author" content="株式会社大建設" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.daikensetsu111.com" />

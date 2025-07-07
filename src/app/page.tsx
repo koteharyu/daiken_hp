@@ -296,7 +296,7 @@ export default function Home() {
 
       {/* フッター! */}
       <footer className={styles.footerModern}>
-        <div>株式会社大建設</div>
+        <div>株式会社大建設<span style={{fontSize: '0.8em', marginLeft: '0.5em'}}>(だいけんせつ)</span></div>
         <div className={styles.footerLinks}>
           <a href="#">ホーム</a>
           <a href="#about">会社概要</a>
