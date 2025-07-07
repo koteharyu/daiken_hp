@@ -1,10 +1,98 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import ContactForm from "../components/ContactForm";
+import Script from "next/script";
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "株式会社大建設",
+    "alternateName": "ダイケンセツ",
+    "description": "福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。地域密着で丁寧な施工をお約束。",
+    "url": "https://www.daikensetsu111.com",
+    "telephone": "+81-70-1180-0336",
+    "email": "info@daikensetsu111.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "愛宕浜2-1-14-803",
+      "addressLocality": "福岡市西区",
+      "addressRegion": "福岡県",
+      "postalCode": "819-0013",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.5904,
+      "longitude": 130.3544
+    },
+    "image": "https://www.daikensetsu111.com/company-overview.png",
+    "logo": "https://www.daikensetsu111.com/favicon.jpg",
+    "priceRange": "￥￥-￥￥￥",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "福岡市"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "リフォームサービス",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "屋根工事",
+            "description": "屋根葺き替え・カバー工事・葺き直し・塗装・板金工事"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "外壁工事",
+            "description": "サイディング壁・モルタル壁・タイル壁・金属サイディング"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "内装工事",
+            "description": "フルリノベーション・仕上げ工事・大工工事・各設備工事"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "防水工事",
+            "description": "FRP防水・シート防水・ウレタン防水・アスファルト防水・屋根防水"
+          }
+        }
+      ]
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "上田大樹",
+      "jobTitle": "代表取締役"
+    },
+    "foundingDate": "2025-06"
+  };
+
   return (
-    <div className={styles.pageModern}>
+    <>
+      <Script
+        id="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className={styles.pageModern}>
       {/* ヘッダー */}
 
       {/* ヒーローセクション */}
@@ -227,5 +315,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

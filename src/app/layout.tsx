@@ -24,9 +24,36 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
-        <title>株式会社大建設</title>
-        <meta name="description" content="福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。" />
+        <title>株式会社大建設 | 福岡市西区のリフォーム専門会社 - 屋根・外壁・内装・防水工事</title>
+        <meta name="description" content="福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。地域密着で丁寧な施工をお約束。無料見積もり実施中。" />
+        <meta name="keywords" content="リフォーム,屋根工事,外壁工事,内装工事,防水工事,福岡市西区,福岡県,大建設,塗装工事,設備工事" />
+        <meta name="author" content="株式会社大建設" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.daikensetsu111.com" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.daikensetsu111.com" />
+        <meta property="og:title" content="株式会社大建設 | 福岡市西区のリフォーム専門会社" />
+        <meta property="og:description" content="福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。地域密着で丁寧な施工をお約束。" />
+        <meta property="og:image" content="https://www.daikensetsu111.com/company-overview.png" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:site_name" content="株式会社大建設" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.daikensetsu111.com" />
+        <meta property="twitter:title" content="株式会社大建設 | 福岡市西区のリフォーム専門会社" />
+        <meta property="twitter:description" content="福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。" />
+        <meta property="twitter:image" content="https://www.daikensetsu111.com/company-overview.png" />
+
+        {/* その他のメタタグ */}
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="theme-color" content="#1976d2" />
+        <link rel="apple-touch-icon" href="/favicon.jpg" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header className={styles.header}>
