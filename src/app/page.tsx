@@ -11,7 +11,7 @@ export default function Home() {
     "alternateName": "ダイケンセツ",
     "description": "福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。地域密着で丁寧な施工をお約束。",
     "url": "https://www.daikensetsu111.com",
-    "telephone": "+81-70-1180-0336",
+    "telephone": "+81-92-600-1194",
     "email": "info@daikensetsu111.com",
     "address": {
       "@type": "PostalAddress",
@@ -307,7 +307,7 @@ export default function Home() {
         </div>
         <div className={styles.footerContact}>
           <div>福岡県福岡市西区愛宕浜2-1-14-803</div>
-          <div><a href="tel:07011800336">070-1180-0336</a></div>
+          <div><a href="tel:0926001194">092-600-1194</a></div>
           <div><a href="mailto:info@daikensetsu111.com">info@daikensetsu111.com</a></div>
         </div>
         <div className={styles.copyright}>
