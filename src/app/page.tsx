@@ -9,16 +9,16 @@ export default function Home() {
     "@type": "LocalBusiness",
     "name": "株式会社大建設",
     "alternateName": "ダイケンセツ",
-    "description": "福岡県福岡市西区の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。地域密着で丁寧な施工をお約束。",
+    "description": "福岡県筑紫野市の株式会社大建設。屋根・外壁・内装・防水工事のリフォーム専門会社です。地域密着で丁寧な施工をお約束。",
     "url": "https://www.daikensetsu111.com",
     "telephone": "+81-92-600-1194",
     "email": "info@daikensetsu111.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "愛宕浜2-1-14-803",
-      "addressLocality": "福岡市西区",
+      "streetAddress": "石崎３丁目３３番地６",
+      "addressLocality": "筑紫野市",
       "addressRegion": "福岡県",
-      "postalCode": "819-0013",
+      "postalCode": "816-0068",
       "addressCountry": "JP"
     },
     "geo": {
@@ -267,7 +267,7 @@ export default function Home() {
           </div>
           <div className={styles.companyRow}>
             <div className={styles.companyLabel}>住所</div>
-            <div className={styles.companyContent}>福岡県福岡市西区愛宕浜2-1-14-803</div>
+            <div className={styles.companyContent}>〒816-0068 福岡県筑紫野市石崎３丁目３３番地６</div>
           </div>
           <div className={styles.companyRow}>
             <div className={styles.companyLabel}>資本準備金</div>
@@ -306,7 +306,7 @@ export default function Home() {
           <a href="#contact">お問い合わせ</a>
         </div>
         <div className={styles.footerContact}>
-          <div>福岡県福岡市西区愛宕浜2-1-14-803</div>
+          <div>〒816-0068 福岡県筑紫野市石崎３丁目３３番地６</div>
           <div><a href="tel:0926001194">092-600-1194</a></div>
           <div><a href="mailto:info@daikensetsu111.com">info@daikensetsu111.com</a></div>
         </div>
