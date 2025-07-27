@@ -275,15 +275,7 @@ export default function Home() {
           </div>
           <div className={styles.companyRow}>
             <div className={styles.companyLabel}>事業内容</div>
-            <div className={styles.companyContent}>
-              ・屋根/外壁工事<br />
-              ・塗装/防水工事<br />
-              ・内装/設備工事
-            </div>
-          </div>
-          <div className={styles.companyRow}>
-            <div className={styles.companyLabel}>取引銀行</div>
-            <div className={styles.companyContent}>PayPay銀行</div>
+            <div className={styles.companyContent}>屋根/外壁工事、塗装/防水工事、内装/設備工事</div>
           </div>
         </div>
       </section>
