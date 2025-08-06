@@ -18,7 +18,7 @@ export default function Home() {
       "streetAddress": "石崎３丁目３３番地６",
       "addressLocality": "筑紫野市",
       "addressRegion": "福岡県",
-      "postalCode": "819-0013",
+      "postalCode": "816-0068",
       "addressCountry": "JP"
     },
     "geo": {
@@ -267,7 +267,7 @@ export default function Home() {
           </div>
           <div className={styles.companyRow}>
             <div className={styles.companyLabel}>住所</div>
-            <div className={styles.companyContent}>〒819-0013 福岡県福岡市西区愛宕浜2-1-14-803</div>
+            <div className={styles.companyContent}>〒816-0068 福岡県筑紫野市石崎３丁目３３番地６</div>
           </div>
           <div className={styles.companyRow}>
             <div className={styles.companyLabel}>資本金</div>
@@ -298,7 +298,7 @@ export default function Home() {
           <a href="#contact">お問い合わせ</a>
         </div>
         <div className={styles.footerContact}>
-          <div>〒819-0013 福岡県福岡市西区愛宕浜2-1-14-803</div>
+          <div>〒816-0068 福岡県筑紫野市石崎３丁目３３番地６</div>
           <div><a href="tel:0926001194">092-600-1194</a></div>
           <div><a href="mailto:info@daikensetsu111.com">info@daikensetsu111.com</a></div>
         </div>
