@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import ContactForm from "../components/ContactForm";
 import Script from "next/script";
+import { FaLine } from "react-icons/fa6";
 
 export default function Home() {
   const structuredData = {
@@ -301,6 +302,17 @@ export default function Home() {
           <div>〒816-0068 福岡県筑紫野市石崎３丁目３３番地６</div>
           <div><a href="tel:0926001194">092-600-1194</a></div>
           <div><a href="mailto:info@daikensetsu111.com">info@daikensetsu111.com</a></div>
+          <div style={{marginTop: '1em'}}>
+            <a 
+              href="https://line.me/R/ti/p/@026epyml" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={styles.lineButton}
+              aria-label="LINE公式アカウント"
+            >
+              <FaLine />
+            </a>
+          </div>
         </div>
         <div className={styles.copyright}>
           © 2025 株式会社大建設 All Rights Reserved.
