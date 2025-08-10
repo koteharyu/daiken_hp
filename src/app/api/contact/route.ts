@@ -93,7 +93,7 @@ export async function POST(request: NextRequest) {
 
         <p style="color: #666;">
           <strong>株式会社大建設</strong><br>
-          〒816-0068 福岡県筑紫野市石崎３丁目３３番地６<br>
+          〒819-0013 福岡県福岡市西区愛宕浜2-1-14-803<br>
           TEL: 092-600-1194<br>
           Email: info@daikensetsu111.com
         </p>
