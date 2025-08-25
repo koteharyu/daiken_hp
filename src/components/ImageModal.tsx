@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import styles from './ImageModal.module.css';
 
@@ -23,6 +23,14 @@ export default function ImageModal({ images, currentIndex, isOpen, onClose }: Im
     setActiveIndex(currentIndex);
   }, [currentIndex]);
 
+  const goToPrevious = useCallback(() => {
+    setActiveIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
+  }, [images.length]);
+
+  const goToNext = useCallback(() => {
+    setActiveIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
+  }, [images.length]);
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -43,15 +51,7 @@ export default function ImageModal({ images, currentIndex, isOpen, onClose }: Im
       document.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'unset';
     };
-  }, [isOpen, activeIndex]);
-
-  const goToPrevious = () => {
-    setActiveIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
-  };
-
-  const goToNext = () => {
-    setActiveIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
-  };
+  }, [isOpen, onClose, goToPrevious, goToNext]);
 
   if (!isOpen || !images.length) return null;
 

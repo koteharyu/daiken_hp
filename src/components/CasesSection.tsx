@@ -53,7 +53,7 @@ export default function CasesSection() {
     );
   });
 
-  const openModal = (src: string, alt: string) => {
+  const openModal = (src: string) => {
     const imageIndex = allImages.findIndex(img => img.src === src);
     setModalState({ isOpen: true, currentIndex: imageIndex });
   };
@@ -82,7 +82,7 @@ export default function CasesSection() {
                     width={300}
                     height={200}
                     style={{borderRadius: '8px', objectFit: 'cover', cursor: 'pointer'}}
-                    onClick={() => openModal(caseItem.beforeSrc, `${caseItem.title} - 施工前`)}
+                    onClick={() => openModal(caseItem.beforeSrc)}
                   />
                 </div>
                 <div className={styles.afterContainer}>
@@ -93,7 +93,7 @@ export default function CasesSection() {
                     width={300}
                     height={200}
                     style={{borderRadius: '8px', objectFit: 'cover', cursor: 'pointer'}}
-                    onClick={() => openModal(caseItem.afterSrc, `${caseItem.title} - 施工後`)}
+                    onClick={() => openModal(caseItem.afterSrc)}
                   />
                 </div>
               </div>
