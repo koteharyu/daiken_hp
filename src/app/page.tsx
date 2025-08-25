@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import ContactForm from "../components/ContactForm";
+import CasesSection from "../components/CasesSection";
 import Script from "next/script";
 
 export default function Home() {
@@ -216,6 +217,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 施工事例 */}
+      <CasesSection />
+
       {/* 代表挨拶 */}
       <section className={`${styles.section} ${styles.greetingSection}`} id="greeting">
         <h2>代表挨拶</h2>
@@ -298,6 +302,7 @@ export default function Home() {
           <a href="#about">会社概要</a>
           <a href="#services">サービス</a>
           <a href="#flow">工事の流れ</a>
+          <a href="#cases">施工事例</a>
           <a href="#greeting">代表挨拶</a>
           <a href="#contact">お問い合わせ</a>
         </div>

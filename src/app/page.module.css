@@ -1029,3 +1029,150 @@ a.secondary {
     font-size: 1rem;
   }
 }
+
+/* 施工事例セクション */
+.casesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  justify-items: center;
+}
+
+.caseCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(230,138,0,0.08);
+  padding: 2rem 1.5rem 1.8rem 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 520px;
+  width: 100%;
+}
+
+.caseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(230,138,0,0.15);
+}
+
+.caseCard h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #1e293b;
+  text-align: center;
+}
+
+.beforeAfter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+
+.beforeContainer,
+.afterContainer {
+  flex: 1;
+  position: relative;
+}
+
+.beforeLabel,
+.afterLabel {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.beforeLabel {
+  background: rgba(107, 114, 128, 0.9);
+}
+
+.afterLabel {
+  background: rgba(230, 138, 0, 0.9);
+}
+
+.beforeContainer img,
+.afterContainer img {
+  width: 100%;
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.beforeContainer img:hover,
+.afterContainer img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.caseDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #475569;
+  text-align: center;
+  margin: 0;
+}
+
+/* タブレット・モバイル対応 */
+@media (max-width: 1024px) {
+  .casesGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .caseCard {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .beforeAfter {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .beforeContainer,
+  .afterContainer {
+    width: 100%;
+  }
+  
+  .beforeContainer img,
+  .afterContainer img {
+    height: 220px;
+  }
+  
+  .caseCard {
+    padding: 1.5rem 1.2rem;
+  }
+  
+  .caseCard h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .casesGrid {
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .caseCard {
+    padding: 1.2rem 1rem;
+  }
+  
+  .beforeContainer img,
+  .afterContainer img {
+    height: 180px;
+  }
+  
+  .caseDescription {
+    font-size: 0.95rem;
+  }
+}
