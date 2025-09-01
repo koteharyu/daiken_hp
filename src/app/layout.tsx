@@ -2,6 +2,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import styles from "./page.module.css";
 
 const geistSans = Geist({
@@ -20,6 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <html lang="ja">
@@ -60,12 +62,12 @@ export default function RootLayout({
           <div className={styles.headerInner}>
             <div className={styles.logo}>株式会社大建設</div>
             <nav className={styles.nav} style={{ display: menuOpen ? 'block' : undefined }}>
-              <a href="#about">会社概要</a>
-              <a href="#services">サービス</a>
-              <a href="#flow">工事の流れ</a>
-              <a href="#cases">施工事例</a>
-              <a href="#greeting">代表挨拶</a>
-              <a href="#contact" className={styles.contactBtn}>お問い合わせ</a>
+              <a href={pathname === '/cases' ? '/#about' : '#about'}>会社概要</a>
+              <a href={pathname === '/cases' ? '/#services' : '#services'}>サービス</a>
+              <a href={pathname === '/cases' ? '/#flow' : '#flow'}>工事の流れ</a>
+              <a href="/cases">施工事例</a>
+              <a href={pathname === '/cases' ? '/#greeting' : '#greeting'}>代表挨拶</a>
+              <a href={pathname === '/cases' ? '/#contact' : '#contact'} className={styles.contactBtn}>お問い合わせ</a>
             </nav>
             <button
               className={styles.hamburger}

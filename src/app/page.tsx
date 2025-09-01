@@ -302,7 +302,7 @@ export default function Home() {
           <a href="#about">会社概要</a>
           <a href="#services">サービス</a>
           <a href="#flow">工事の流れ</a>
-          <a href="#cases">施工事例</a>
+          <a href="/cases">施工事例</a>
           <a href="#greeting">代表挨拶</a>
           <a href="#contact">お問い合わせ</a>
         </div>

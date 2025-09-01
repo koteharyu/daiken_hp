@@ -1031,6 +1031,39 @@ a.secondary {
 }
 
 /* 施工事例セクション */
+.casesCtaContainer {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-top: 1.2rem;
+}
+
+.casesCtaText {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.casesCtaButton {
+  display: inline-block;
+  background: #E68A00;
+  color: white;
+  padding: 0.8em 2.2em;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(230, 138, 0, 0.15);
+}
+
+.casesCtaButton:hover {
+  background: #CC7A00;
+}
+
+
 .casesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));

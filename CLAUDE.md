@@ -87,6 +87,7 @@ Sections are added directly to `src/app/page.tsx`. Follow the existing pattern:
 - **State Management**: Local useState, no prop drilling due to flat structure
 - **Error Handling**: Try-catch in API routes, user-friendly messages
 - **Type Safety**: Strict TypeScript, define interfaces for data structures
+- **Button Design**: All buttons must use the same orange color (#E68A00) and styling as the contact button (`.ctaBtn` class)
 
 ### Important Notes
 

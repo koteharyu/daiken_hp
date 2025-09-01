@@ -1,0 +1,151 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: white;
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+.casesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.caseCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+}
+
+.caseCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
+  border-color: #d1d5db;
+}
+
+.caseTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 1.5rem 1.5rem 0.5rem;
+}
+
+
+.beforeAfter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.beforeContainer,
+.afterContainer {
+  position: relative;
+}
+
+.beforeLabel,
+.afterLabel {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.beforeLabel {
+  background: #ef4444;
+}
+
+.afterLabel {
+  background: #10b981;
+}
+
+.caseImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.caseImage:hover {
+  transform: scale(1.05);
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .filterContainer {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .filterButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .casesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .caseCard {
+    margin: 0 0.5rem;
+  }
+
+  .caseTitle {
+    font-size: 1.125rem;
+    margin: 1rem 1rem 0.5rem;
+  }
+
+  .categoryBadge {
+    margin: 0 1rem 1rem;
+  }
+
+  .caseImage {
+    height: 150px;
+  }
+}
