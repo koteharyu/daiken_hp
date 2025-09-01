@@ -41,6 +41,16 @@ export default function CasesSection() {
       title: '浴室ドア交換',
       beforeSrc: '/case2-before.jpg',
       afterSrc: '/case2-after.jpg'
+    },
+    {
+      title: '内装フローリングクロス張り替え',
+      beforeSrc: '/case6-before.jpg',
+      afterSrc: '/case6-after.jpg'
+    },
+    {
+      title: '洗面脱衣場リノベーション',
+      beforeSrc: '/case7-before.jpg',
+      afterSrc: '/case7-after.jpg'
     }
   ];
 
