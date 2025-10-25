@@ -49,6 +49,12 @@ export const cases: CaseData[] = [
     beforeSrc: '/case7-before.jpg',
     afterSrc: '/case7-after.jpg',
     category: 'bathroom'
+  },
+  {
+    title: 'キッチンリフォーム',
+    beforeSrc: '/case8-before.jpg',
+    afterSrc: '/case8-after.jpg',
+    category: 'interior'
   }
 ];
 
