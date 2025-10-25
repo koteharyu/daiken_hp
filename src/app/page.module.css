@@ -913,7 +913,7 @@ a.secondary {
   .nav a:last-child {
     border-bottom: none;
   }
-  
+
   .nav .contactBtn {
     background: transparent !important;
     border: 2px solid #E68A00 !important;
@@ -926,7 +926,7 @@ a.secondary {
     transition: all 0.3s ease !important;
     font-size: 0.95rem !important;
   }
-  
+
   .nav .contactBtn:hover {
     background: #E68A00 !important;
     color: #fff !important;
@@ -1047,12 +1047,12 @@ a.secondary {
   .aboutContent h3 {
     font-size: 1.8rem;
   }
-  
+
   .aboutTagline {
     font-size: 1.2rem;
     padding: 2px 4px;
   }
-  
+
   .aboutDescription {
     font-size: 1rem;
   }
@@ -1186,7 +1186,7 @@ a.secondary {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .caseCard {
     max-width: 600px;
   }
@@ -1197,21 +1197,21 @@ a.secondary {
     flex-direction: column;
     gap: 1.2rem;
   }
-  
+
   .beforeContainer,
   .afterContainer {
     width: 100%;
   }
-  
+
   .beforeContainer img,
   .afterContainer img {
     height: 220px;
   }
-  
+
   .caseCard {
     padding: 1.5rem 1.2rem;
   }
-  
+
   .caseCard h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -1223,16 +1223,16 @@ a.secondary {
     gap: 1.5rem;
     margin-top: 2rem;
   }
-  
+
   .caseCard {
     padding: 1.2rem 1rem;
   }
-  
+
   .beforeContainer img,
   .afterContainer img {
     height: 180px;
   }
-  
+
   .caseDescription {
     font-size: 0.95rem;
   }
